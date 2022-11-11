@@ -1,0 +1,100 @@
+/* INTRO SECTION */
+.intro--section{
+    padding-inline: 5%;
+    justify-content: space-between !important;
+    padding-block: 3rem 2rem;
+}
+.intro-text--container {
+    max-width: 40rem;
+    margin-right: 2rem;
+}
+.intro-text h1 {
+    font-size: var(--fs-xl);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+}
+.intro-text h1 span {
+    color: #A02279;
+}
+.intro-text p {
+    margin-block: 1.8rem;
+    font-size: var(--fs-l);
+    padding-right: .3rem;
+}
+.form--container form {
+    width: 100%;
+}
+.form--container input {
+    width: 60%;
+    padding: .86rem 1rem;
+    border-radius: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid gray;
+    border-right: none;
+}
+.form--container button {
+    width: 25%;
+    border-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+.partners--container {
+    background: var(--bg-primary);
+    justify-content: space-around !important;
+    padding-block: .7rem;
+}
+
+/* SAMPLES SECTION */
+.sample--section {
+    padding-block: 3.5rem 2rem;
+}
+.sample--section h2 {
+    color: #000000;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 3rem;
+}
+.cards--container {
+    flex-wrap: wrap;
+}
+
+/* NFTS INTRO SECTION */
+.nft-intro--section {
+    background: var(--bg-primary);
+    color: var(--secondary-color);
+    padding-inline: 5%;
+    padding-block: 3.5rem;
+}
+.nft-intro--section .intro-text {
+    margin-right: 1rem;
+}
+.nft-intro--section .intro-text h2 {
+    font-size: 3rem;
+}
+.nft-intro--section .intro-text p{
+    font-size: 1.125rem;
+}
+
+.hero--container img {
+    width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .hero--container {
+        max-width: 35rem;
+    }
+    .intro--section, .nft-intro--section{
+        flex-direction: column-reverse;
+        justify-content: center !important;
+        row-gap: 1rem;
+        text-align: center;
+    }
+    .nft-intro--section .intro-text {
+        max-width: 40rem;
+    }
+    .intro-text--container {
+        margin-right: 0;
+    }
+  }

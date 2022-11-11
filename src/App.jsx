@@ -1,10 +1,20 @@
 import React from 'react'
+import { Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import Navbar from './main_components/Navbar'
+import Footer from './main_components/Footer'
+
 
 const App = () => {
   return (
     <div>
-      <h1>Hello World</h1>
-      <img src="/images/image_66.svg" alt="" />
+      <Navbar />
+      
+      {/* ROUTES */}
+      <Routes>
+        <Route path='/' element={ <Home /> }></Route>
+      </Routes>
+      <Footer />
     </div>
     
   )

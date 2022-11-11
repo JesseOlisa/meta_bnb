@@ -1,0 +1,25 @@
+.card {
+    width: 18.25rem;
+    height: 23.25rem;
+    padding: 1rem;
+    font-size: .85rem;
+    position: relative;
+}
+.card-info, .card-time {
+    justify-content: space-between !important;
+    margin-top: .2rem;
+}
+.card-time {
+    font-size: 0.75rem;
+}
+
+.ratings {
+    color: #A02279 !important;
+    margin-top: .4rem;
+}
+
+.heart {
+    position: absolute;
+    top: 1.4rem;
+    right: 1.4rem;
+}

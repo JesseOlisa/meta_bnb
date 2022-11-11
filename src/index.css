@@ -1,4 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@400;500;600;700&display=swap');
+
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Red Rose', cursive;
+}
+
+body{
+  min-width: 100%;
+  min-height: 90vh;
+  overflow-x: hidden;
+  background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
 }
 

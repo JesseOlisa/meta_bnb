@@ -2,7 +2,11 @@ import React from 'react'
 
 const App = () => {
   return (
-    <h1>Hello World</h1>
+    <div>
+      <h1>Hello World</h1>
+      <img src="/images/image_66.svg" alt="" />
+    </div>
+    
   )
 }
 

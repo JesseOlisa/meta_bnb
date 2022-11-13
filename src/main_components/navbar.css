@@ -13,3 +13,95 @@
 .nav-links--container a:hover {
     opacity: .75 !important;
 }
+.menu--container {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    display: none !important;
+}
+.menu--btn {
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background-color: #434343;
+    transition: all 0.2s ease-in-out;
+    border-radius: 5px;
+}
+.menu--btn::before, .menu--btn::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #434343;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.menu--btn::before {
+    transform: translateY(8px);
+}
+.menu--btn::after {
+    transform: translateY(-8px);
+}
+.menu--btn.open {
+    background: transparent;
+}
+.menu--btn.open::before {
+    transform: rotate(45deg);
+}
+.menu--btn.open::after {
+    transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 1000px) {
+    .logo--container {
+        max-width: 10rem;
+    }
+    .nav-links--container {
+        gap: 1rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .menu--container {
+        display: flex !important;
+        z-index: 4;
+    }
+    .nav--container {
+        position: relative;
+        z-index: 2;
+    }
+    .nav-links--container {
+        position: fixed;
+        width: 15rem;
+        min-height: 100vh;
+        background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
+        flex-direction: column;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+        padding-block: 5.5rem 0;
+        padding-inline: 1.7rem;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+    .nav-links--container.open, .connect--wallet.open {
+        transform: translateX(0%);
+    }
+    .connect--wallet {
+        display: inline-block;
+        width: 14.85rem;
+        position: fixed;
+        top: 16rem;
+        right: 0;
+        z-index: 5;
+        padding-top: 1.8rem;
+        padding-left: 1.8rem;
+        border-top: 1px solid #434343;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+}

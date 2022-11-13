@@ -68,13 +68,16 @@
     padding-block: 3.5rem;
 }
 .nft-intro--section .intro-text {
-    margin-right: 1rem;
+    margin-right: 2rem;
+    max-width: 25rem;
 }
 .nft-intro--section .intro-text h2 {
     font-size: 3rem;
 }
 .nft-intro--section .intro-text p{
     font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.5;
 }
 
 .hero--container img {
@@ -92,7 +95,7 @@
         text-align: center;
     }
     .nft-intro--section .intro-text {
-        max-width: 40rem;
+        margin-right: 0;
     }
     .intro-text--container {
         margin-right: 0;

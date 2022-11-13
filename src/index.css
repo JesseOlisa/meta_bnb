@@ -22,7 +22,21 @@ body{
   color: var(--primary-color);
   font-size: var(--fs-m);
   -webkit-font-smoothing: antialiased;
+  position: relative;
+  overflow-x: hidden;
 }
+
+.modal {
+  display: block;
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+  content: '';
+  top: 0;
+  left: 0;
+  background: rgba(64, 64, 64, 0.3);
+}
+
 
 /* RESETS */
 * {
@@ -47,6 +61,10 @@ button {
   outline: none;
   border: none;
   font-family: 'Red Rose', cursive;
+}
+img {
+  display: block;
+  max-width: 100%;
 }
 
 /* UTILITY CLASSES */

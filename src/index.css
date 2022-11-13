@@ -61,6 +61,7 @@ button {
   outline: none;
   border: none;
   font-family: 'Red Rose', cursive;
+  cursor: pointer;
 }
 img {
   display: block;

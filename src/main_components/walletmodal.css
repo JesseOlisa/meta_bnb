@@ -1,0 +1,74 @@
+/* wallet modal */
+.wallet--modal {
+    position: fixed;
+    background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
+    transform: translateX(-50%);
+    top: 17rem;
+    left: 50%;
+    min-width: 40%;
+    border-radius: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.wallet--modal.open-wallet {
+    opacity: 1;
+    z-index: 2;
+}
+.wallet--header {
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #CFD8DC;
+    justify-content: space-between !important;
+    margin-bottom: .5rem;
+}
+.wallet--body{
+    padding: 1rem 2rem;
+}
+.wallet--body p {
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+.wallet-card {
+    padding: .9rem;
+    border: 1px solid #CFD8DC;
+    gap: .5rem;
+    margin-bottom: .5rem;
+    border-radius: 12px;
+    font-size: 18px;
+}
+.wallet-card h3 {
+    flex-grow: 3;
+}
+.chevron{
+    color: #959DA6;
+}
+.close--btn{
+    cursor: pointer;
+}
+@media screen and (max-width: 1000px) {
+    .wallet--modal {
+        width: 50%;
+    }
+    .wallet--header, .wallet--body{
+        padding: 1rem;
+    }
+    .wallet-card {
+        padding: .7rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .wallet--modal {
+        width: 60%;
+    }
+    .wallet-card {
+        font-size: 1rem;
+    }
+    .wallet-card img {
+        width: 40px;
+        aspect-ratio: 1;
+    }
+}
+@media screen and (max-width: 600px) {
+    .wallet--modal {
+        width: 90%;
+    }
+}

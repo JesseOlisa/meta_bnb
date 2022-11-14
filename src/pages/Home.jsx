@@ -44,7 +44,7 @@ const Home = () => {
             
             {/* Hero section */}
             <div className='hero--container'>
-                    <img src="/images/hero_1.svg" alt="rent these places" />
+                    <img src="/images/hero_1.png" alt="rent these places" />
             </div>
         </section>
         

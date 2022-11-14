@@ -62,7 +62,7 @@ const Navbar = () => {
       <header className='flex nav--container'>
           {modalBg()}
           <div className='logo--container'>
-              <img src="/images/logo.svg" alt="logo" />
+              <img src="/images/logo.png" alt="logo" />
           </div>
           <nav className={`nav-links--container flex ${openNav}`}>
               <Link to="/" className='link'>Home</Link>

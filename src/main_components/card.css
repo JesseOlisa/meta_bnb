@@ -5,14 +5,17 @@
     font-size: .85rem;
     position: relative;
 }
+
 .card img {
     min-width: 100%;
     aspect-ratio: 1;
 }
+
 .card-info, .card-time {
     justify-content: space-between !important;
     margin-top: .2rem;
 }
+
 .card-time {
     font-size: 0.75rem;
 }

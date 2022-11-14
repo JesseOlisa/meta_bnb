@@ -10,7 +10,7 @@ const PlaceToStay = () => {
         for(let i = 0; i < 16; i++){
             let card = <Card 
                             key={i}
-                            image={`/images/NFTs/nft_${i}.svg`} />
+                            image={`/images/NFTs/nft_${i}.png`} />
             cardsArr.push(card);
         }
         return cardsArr;

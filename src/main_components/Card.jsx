@@ -25,7 +25,6 @@ const Card = ({image}) => {
             <AiFillStar />
             <AiFillStar />
         </div>
-        <img src="/images/heart.png" alt="" className='heart' />
     </div>
   )
 }

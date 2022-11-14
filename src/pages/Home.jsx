@@ -9,7 +9,7 @@ const Home = () => {
         for(let i = 0; i < 8; i++){
             let card = <Card 
                             key={i}
-                            image={`/images/NFTs/nft_${i}.svg`} />
+                            image={`/images/NFTs/nft_${i}.png`} />
             cardsArr.push(card);
         }
         return cardsArr;

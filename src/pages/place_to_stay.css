@@ -2,9 +2,6 @@ ul, li {
     display: inline-block;
     cursor: pointer;
 }
-/* .cards--container li {
-    margin-inline: .5rem;
-} */
 .categories--container{
     width: 100%;
     padding-inline: 5%;
@@ -38,7 +35,6 @@ ul, li {
     .categories--container{
         padding-inline: 7.5%;
     }
-
 }
 @media screen and (max-width: 1000px) {
     .categories--container {
@@ -57,5 +53,13 @@ ul, li {
     }
     .btn-location {
         flex-wrap: nowrap !important;
+    }
+}
+@media screen and (max-width: 768px) {
+    .categories--container{
+        margin-top: 0;
+    }
+    .cards--container {
+        margin-top: 1rem;
     }
 }

@@ -5,6 +5,10 @@
     font-size: .85rem;
     position: relative;
 }
+.card img {
+    max-width: 100%;
+    aspect-ratio: 1;
+}
 .card-info, .card-time {
     justify-content: space-between !important;
     margin-top: .2rem;
@@ -22,4 +26,6 @@
     position: absolute;
     top: 1.4rem;
     right: 1.4rem;
+    width: 10px;
+    aspect-ratio: 1;
 }

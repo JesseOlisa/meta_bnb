@@ -31,6 +31,11 @@ footer h3 {
 .socials {
     justify-content: space-between !important;
     font-size: 1.25rem;
+    width: 50%;
+}
+.socials--container {
+    max-width: 10rem;
+    margin-top: -3.7rem;
 }
 
 /* MEDIA QUERIES */
@@ -59,11 +64,20 @@ footer h3 {
     }
     .footer-logo--container {
         align-items: center !important;
+        height: 50px;
     }
     .footer-links--container {
         text-align: center;
         flex-direction: column;
         row-gap: 1.2rem;
+    }
+    .socials--container {
+        margin-top: 1.5rem;
+        margin-inline: auto;
+
+    }
+    .socials {
+        margin-inline: auto;
     }
   }
 

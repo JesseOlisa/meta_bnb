@@ -9,14 +9,6 @@ const Footer = () => {
             
             <div className='flex footer-logo--container'>
                 <img src="/images/logo_white.svg" alt="logo" />
-                <div>
-                    <ul className='socials flex'>
-                        <li><a href="#"><FaFacebookF /></a></li>
-                        <li><a href="#"><FaInstagram /></a>
-                        </li>
-                        <li><a href="#"><FaTwitter /></a></li>
-                    </ul>
-                </div>
             </div>
 
             <div>
@@ -49,7 +41,18 @@ const Footer = () => {
                 </ul>
             </div>
         </div>
-        <p>&copy; 2022 Metabnb</p>
+        
+        <div className='socials--container'>
+            <div>
+                <ul className='socials flex'>
+                    <li><a href="#"><FaFacebookF /></a></li>
+                    <li><a href="#"><FaInstagram /></a>
+                    </li>
+                    <li><a href="#"><FaTwitter /></a></li>
+                </ul>
+            </div>
+            <p>&copy; 2022 Metabnb</p>
+        </div>
     </footer>
   )
 }

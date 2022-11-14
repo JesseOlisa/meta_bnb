@@ -106,3 +106,10 @@
     }
 
 }
+
+@media screen and (min-width: 1200px) {
+    .categories--container{
+        padding-inline: 7.5%;
+    }
+
+}

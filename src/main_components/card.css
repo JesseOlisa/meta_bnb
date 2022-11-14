@@ -6,7 +6,7 @@
     position: relative;
 }
 .card img {
-    max-width: 100%;
+    min-width: 100%;
     aspect-ratio: 1;
 }
 .card-info, .card-time {

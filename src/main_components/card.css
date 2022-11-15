@@ -32,3 +32,10 @@
     width: 10px;
     aspect-ratio: 1;
 }
+
+@media (min-width: 1000px) and (max-width: 1300px) {
+    .card {
+        width: 15.25rem;
+        height: 21.25rem;
+    }
+}

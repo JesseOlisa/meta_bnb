@@ -2,8 +2,8 @@
 .wallet--modal {
     position: fixed;
     background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
-    transform: translateX(-50%);
-    top: 17rem;
+    transform: translate(-50%, -50%);
+    top: 50%;
     left: 50%;
     min-width: 40%;
     border-radius: 14px;

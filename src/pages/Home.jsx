@@ -3,13 +3,15 @@ import './home.css'
 import Card from '../main_components/Card'
 
 const Home = () => {
-
+    
+    // This function returns jsx components for each nft card
+    
     const cards = () => {
         let cardsArr = []
         for(let i = 0; i < 8; i++){
             let card = <Card 
                             key={i}
-                            image={`/images/NFTs/nft_${i}.png`} />
+                            image={`/images/NFTs/home/nft_${i}.png`} />
             cardsArr.push(card);
         }
         return cardsArr;
@@ -71,7 +73,7 @@ const Home = () => {
                 <a href="#" className='btn btn-white'>Learn more</a>
             </div>
             <div className='hero--container'>
-                <img src="/images/hero_2.svg" alt="#" />
+                <img src="/images/hero_2.png" alt="#" />
             </div>
         </section>
     </main>

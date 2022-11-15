@@ -4,6 +4,9 @@
     justify-content: space-between !important;
     padding-block: 3rem 2rem;
 }
+.hero--container {
+    max-width: 44rem;
+}
 .intro-text--container {
     max-width: 40rem;
     margin-right: 2rem;
@@ -101,3 +104,15 @@
         margin-right: 0;
     }
   }
+@media screen and (max-width: 600px) {
+    .sample--section h2 {
+        font-size: 2.1rem;
+        padding-inline: 1rem;
+    }
+    .nft-intro--section {
+        padding-block: 4rem;
+    }
+    .nft-intro--section .intro-text h2 {
+        font-size: 2.4rem;
+    }
+}

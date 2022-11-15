@@ -48,6 +48,8 @@
 .close--btn{
     cursor: pointer;
 }
+
+/* MEDIA QUERIES */
 @media screen and (max-width: 1000px) {
     .wallet--modal {
         width: 50%;

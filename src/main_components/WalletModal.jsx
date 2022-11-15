@@ -14,13 +14,13 @@ const WalletModal = ({closeModal, showWallet}) => {
           <p>Choose your preferred wallet:</p>
           {/* {metamask wallet} */}
           <a href="#" className='wallet-card flex'>
-            <img src="/images/metamask_icon.svg" alt="metamask" />
+            <img src="/images/metamask_icon.png" alt="metamask" />
             <h3>Metamask</h3>
             <BsChevronRight className='chevron'/>
           </a>
           {/* wallet connect */}
           <a href="#" className='wallet-card flex'>
-            <img src="/images/wallet_connect.svg" alt="wallet connect" />
+            <img src="/images/wallet_connect.png" alt="wallet connect" />
             <h3>WalletConnet</h3>
             <BsChevronRight className='chevron'/>
           </a>

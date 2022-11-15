@@ -4,13 +4,13 @@ import Card from '../main_components/Card'
 import './place_to_stay.css'
 
 const PlaceToStay = () => {
-
+    // This returns places to stay cards
     const placeCards = () => {
         let cardsArr = []
         for(let i = 0; i < 16; i++){
             let card = <Card 
                             key={i}
-                            image={`/images/NFTs/nft_${i}.png`} />
+                            image={`/images/NFTs/place/nft_${i}.png`} />
             cardsArr.push(card);
         }
         return cardsArr;

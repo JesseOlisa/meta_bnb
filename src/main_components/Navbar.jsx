@@ -6,10 +6,13 @@ import './navbar.css'
 
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [walletOpen, setWalletOpen] = useState(false);
-  const [navOpen, setNavOpen] = useState(false)
+  // State Declations
+  const [isOpen, setIsOpen] = useState(false); //This state represents modal background
+  const [walletOpen, setWalletOpen] = useState(false); //This state represents wallet modal
+  const [navOpen, setNavOpen] = useState(false); //This state represents mobile nav
 
+  // USE EFFECTS 
+  // This effect prevents scrolling when modal is open
   useEffect(() => {
     if (isOpen == true) {
       document.body.parentElement.style.overflow = 'hidden';
@@ -18,7 +21,8 @@ const Navbar = () => {
       document.body.parentElement.style.overflowY = 'scroll';
     }
   }, [isOpen])
-// close nav
+
+  // This effect closes modal when click outside
   useEffect(() => {
     const closeOnClick = (e) => {
       let target = e.target.className
@@ -33,20 +37,24 @@ const Navbar = () => {
     return () => document.removeEventListener('mousedown', closeOnClick)
   })
 
+  //Dynamic style declaration
   let openNav = navOpen ? 'open' : '';
   let showWallet = walletOpen ? 'open-wallet' : '';
 
-  // functions
+  // FUNCTION
+  // This two function toggles modal background
   const handleClick = () => {
     setIsOpen(prevState => !prevState)
   }
   let modalBg = () => isOpen ? <div className='modal'></div> : '';
   
+  // This toggles nav
   let toggleNav = () => {
     handleClick();
     setNavOpen(prev => !prev)
   }
   
+  // This two function toggles wallet modal
   let openWalletModal = () => {
     setWalletOpen(true);
     setNavOpen(false);
@@ -57,6 +65,7 @@ const Navbar = () => {
     setWalletOpen(false);
     setIsOpen(false);
   }
+
   return (
     <>
       <header className='flex nav--container'>
@@ -67,8 +76,8 @@ const Navbar = () => {
           <nav className={`nav-links--container flex ${openNav}`}>
               <Link to="/" className='link'>Home</Link>
               <Link to="place-to-stay" className='link'>Place to stay</Link>
-              <a href="#" className='link'>NFTS</a>
-              <a href="#" className='link'>Community</a>
+              <Link to="/" className='link'>NFTS</Link> 
+              <Link to="/" className='link'>Community</Link>
           </nav>
           <div className={`connect--wallet ${openNav}`}>
             <button className='btn btn--connect-wallet' onClick={openWalletModal}>Connect wallet</button>

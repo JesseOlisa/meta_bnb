@@ -91,15 +91,9 @@ img {
   color: #A02279;
 }
 
+/* MEDIA QURIES */
 
-/* @media screen and (min-width: 1401px) {
-  body, html {
-    max-width: 1200px !important;
-    margin-inline: auto;
-  }
-} */
-
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1021px) {
   :root {
     --fs-m: 1.15rem;
     --fs-s: 1rem;

@@ -9,6 +9,7 @@
     border-radius: 14px;
     opacity: 0;
     transition: opacity 0.3s ease;
+    z-index: -2;
 }
 .wallet--modal.open-wallet {
     opacity: 1;
